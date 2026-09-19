@@ -55,18 +55,18 @@ _(El proceso se realiza por medio de registros en papel, lo que dificulta la tra
 
 | Tipo de usuario | Qué necesita hacer en el sistema | ¿Tenemos acceso para entrevistarlo? |
 | --- | --- | --- |
-| _(completar)_ | _(completar)_ | Sí / No — _(quién es)_ |
-| _(completar)_ | _(completar)_ | Sí / No — _(quién es)_ |
+| _(Administrador)_ | _(carga y visualizacion de inventario)_ | Sí / — _(JOHAN STIVN HENAO MUÑOZ)
+| _(tecnicos)_ | _(carga de inventario)_ | Sí  — _(JOSE FERNANDO SANCHEZ GARCIA, CRISTIAN CAMILO CASTAÑO MONTES)_ |
 
 > Al menos **un usuario real y accesible** es obligatorio: en la Clase 3 hay que hacerle una sesión de elicitación de verdad.
-
+# No aplica porque no se cuenta con un usuario real para realizar la entrevista.
 ---
 
 ## 4. Capacidad del equipo
 
 **¿Por qué este equipo puede levantar requisitos de este dominio?** _(acceso a usuarios reales, alguien trabaja o trabajó ahí, experiencia previa con el proceso, etc.)_
 
-_(completar)_
+_(SI, ALGUEIN DE NUESTRO EQUIPO PRESENCIO ESTA PROBLEMATICA EN LA EMPRESA DONDE TRABAJA)_
 
 ---
 
@@ -74,26 +74,27 @@ _(completar)_
 
 **Tres cosas que el sistema sí debe hacer**:
 
-1. _(completar)_
-2. _(completar)_
-3. _(completar)_
+1. _(CARGA DE INVENTARIO)_
+2. _(VISUALIZACION DEL INVENTARIO TOTAL)_
+3. _(CARGA DE LOS ELEMENTOS EN EL INVENTARIO DE LOS GASTADO POR LOS TECNICOS )
+4. _(HISTORIAL DE LAS MODIFICACIONES)
 
 **Tres cosas que el sistema no va a hacer**:
 
-1. _(completar)_
-2. _(completar)_
-3. _(completar)_
+1. _(NO REALIZA COMPRAS DE MATERIALES)_
+2. _(NO REALIZA TRABAJOS TECNICOS)_
+3. _(NO TIENE VISUALIZACION DEL ESTADO DE LOS MATERIALES)_
 
 ---
 
 ## 6. Autoverificación
 
 - [ ] Hay **usuarios reales accesibles** para entrevistar en la Clase 3.
-- [ ] El dominio da para **10 requisitos funcionales y 5 no funcionales** sin inventarlos.
-- [ ] Los **tres casos críticos** se ven implementables end-to-end en seis semanas.
+- [] El dominio da para **10 requisitos funcionales y 5 no funcionales** sin inventarlos.
+- [X] Los **tres casos críticos** se ven implementables end-to-end en seis semanas.
 - [ ] El proyecto **no fue desarrollado** en otra asignatura ni se está reciclando.
-- [ ] No es demasiado grande _(una red social completa)_ ni demasiado pequeño _(una calculadora)_.
-- [ ] El sistema **maneja datos personales**: Sí / No. Si es Sí, aplica la Ley 1581 de 2012 en el numeral 10 de la Nota 1.
+- [] No es demasiado grande _(una red social completa)_ ni demasiado pequeño _(una calculadora)_.
+- [X] El sistema **maneja datos personales**: Sí / No. Si es Sí, aplica la Ley 1581 de 2012 en el numeral 10 de la Nota 1.
 
 ---
 
