@@ -19,9 +19,9 @@ Ubicar el proyecto en cada factor **con un dato concreto del dominio**, no con u
 | Criticidad | *(ágil)* | *(si el sistema falla, se vuelve al cuaderno)* |
 | Dinamismo de los requisitos | *(ágil)* | *(No se requiere ningun mensaje o notificacion)* |
 | Personal *(experiencia del equipo)* | *(intermedio)* | *(nadie ha trabajado en scrum; los integrantes han realizados proyectos similares)* |
-| Cultura *(del cliente u organización)* | *(completar)* | *(completar)* |
-| Acceso al cliente | *(completar)* | *(completar)* |
-| Regulación | *(completar)* | *(completar)* |
+| Cultura *(agil)* | *(el gerente acepta ver los avances del proyecto)*  |
+| Acceso al cliente | *(agil)* | *(disponibilidad de tiempo de lunes a sabado)* |
+| Regulación | *(leve)* | *(majena nombres y documento: aplica ley 1581 de 2012)* |
 
 ---
 
