@@ -19,17 +19,28 @@ Ubicar el proyecto en cada factor **con un dato concreto del dominio**, no con u
 | Criticidad | *(ágil)* | *(si el sistema falla, se vuelve al cuaderno)* |
 | Dinamismo de los requisitos | *(ágil)* | *(No se requiere ningun mensaje o notificacion)* |
 | Personal *(experiencia del equipo)* | *(intermedio)* | *(nadie ha trabajado en scrum; los integrantes han realizados proyectos similares)* |
-| Cultura *(agil)* | *(el gerente acepta ver los avances del proyecto)*  |
-| Acceso al cliente | *(agil)* | *(disponibilidad de tiempo de lunes a sabado)* |
-| Regulación | *(leve)* | *(majena nombres y documento: aplica ley 1581 de 2012)* |
+| Cultura  |*(agil)* | *(el gerente acepta ver los avances del proyecto)*  |
+| Acceso al cliente | *(agil)* | *(disponibilidad coodinador johan stiven henao muñoz dia viernes)* |
+| Regulación | Plan *(leve)* | *(majena nombres y documento: aplica ley 1581 de 2012)* |
 
 ---
 
 ## 2. Selección y justificación
 
-**Metodología elegida:** *(cascada / incremental / espiral / Scrum / Kanban / Scrumban)*
+**Metodología elegida:** *( Scrum )*
 
 **Justificación** *(un párrafo que cite al menos tres factores del punto 1)*:
+Es scrum;
+
+Participación sin roles fijos: todos los integrantes colaboramos activamente, sin jerarquías rígidas, lo que facilita la comunicación y la coordinación.
+
+Transparencia en las tareas: podemos revisar en qué estado se encuentran las tareas, asignar prioridades y definir tiempos ya planeados.
+
+Mejora continua: buscamos optimizar constantemente el proceso, ajustando la planificación según las necesidades que surjan.
+
+Colaboración con el cliente: revisamos detalles junto al cliente para evitar errores costosos al momento de realizar cambios, y siempre adaptamos el proyecto a sus requerimientos.
+
+Reuniones diarias: nos reunimos unos minutos cada día para analizar los progresos, identificar obstáculos y asegurar que el proyecto avance de manera ordenada.
 
 *(completar)*
 
