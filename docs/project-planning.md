@@ -42,14 +42,14 @@ Colaboración con el cliente: revisamos detalles junto al cliente para evitar er
 
 Reuniones diarias: nos reunimos unos minutos cada día para analizar los progresos, identificar obstáculos y asegurar que el proyecto avance de manera ordenada.
 
-*(completar)*
+
 
 **Alternativas descartadas** *(mínimo dos)*:
 
 | Alternativa | Por qué no encaja en este dominio |
 | --- | --- |
-| *(completar)* | *(completar)* |
-| *(completar)* | *(completar)* |
+| *(Cascada)* | *(Se basa en fases rígidas y secuenciales (análisis → diseño → implementación → pruebas → entrega). En un proyecto corto, este enfoque consume demasiado tiempo en documentación y planificación antes de ver resultados funcionales. Además, si surge un cambio en los requisitos, es muy costoso y difícil volver atrás.)* |
+| *(Espiral)* | *(Aunque es más flexible, implica ciclos repetitivos de análisis de riesgos, planificación y prototipado. Esto genera una carga de trabajo innecesaria para un proyecto pequeño, donde los riesgos son bajos y lo que se busca es rapidez y simplicidad. En lugar de avanzar ágilmente, se pierde tiempo en evaluaciones que no aportan valor real al corto plazo.)* |
 
 > "Porque es la más usada" o "porque es flexible" no son justificaciones: no dicen nada del dominio.
 
@@ -67,14 +67,14 @@ Sprint de una semana. Planning el lunes por videollamada, Review con el dueño t
 | --- | --- | --- |
 | *(Johan Stiven Henao Muñoz)* | *( Product Owner)* | *(Es el encargado de comunicarse con el cliente y el Scrum Master)* |
 | *(Johan Stiven Henao Muñoz)* | *( Scrum Master)* | *(Es el encargado de comunicarse con el Scrum Master y el Grupo de traajo)* |
-| *(Cristian Montes)* | *(Grupo de trabajo)* | *(Desarollar)* |
+| *(Cristian Montes)* | *(Grupo de trabajo)* | *(Desarollador)* |
   *(Jose Sanchez)* | *(Grupo de trabajo)* | *(Desarollador)* |
 
 **Definición de Hecho** *(mínimo tres condiciones verificables para que una tarjeta pase a Hecho)*:
 
-1. *(completar)*
-2. *(completar)*
-3. *(completar)*
+1. *(Que cumpla con los requerimientos solicitados en la tarjeta)*
+2. *(Que tenga documentación y que tenga codigo limpio)*
+3. *(Debe ser revisada y aprobada por el scrum Master, para que pase a hecho)*
 
 *Preguntar por esto*
 
@@ -108,7 +108,7 @@ Primera entrada de la bitácora de gestión.
 | Fecha | *(25/09/2026)* |
 | Asistentes | *(Grupo de trabajo y cliente)* |
 | Decisiones tomadas | *(Levantamiento de requerimientos y su respectivo analisis)* |
-| Compromisos *(Johan Stiven Henao, se compromete a tener una entrevista todos los viernes con el cliente para definir sus peticiones y mejoras del proyecto )* |
+| Compromisos | *(Johan Stiven Henao, se compromete a tener una entrevista todos los viernes con el cliente para definir sus peticiones y mejoras del proyecto )* |
 | Bloqueos o riesgos | *(Mal analisis de las peticiones del cliente, vulneravilidad de los datos, caida del sistema generando retrasos en las fechas de entrega o cambio bruscos en el proyectos)* |
 ## Ejemplo diligenciado
 
