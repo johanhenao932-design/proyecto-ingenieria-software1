@@ -59,19 +59,16 @@ Reuniones diarias: nos reunimos unos minutos cada día para analizar los progres
 
 Explicar cómo se organiza el equipo **dentro** de ellas.
 
-| Campo | Respuesta |
-| --- | --- |
-| Duración de la iteración *(o "flujo continuo")* | *(completar)* |
-| Eventos o reuniones y cuándo se hacen | *(completar)* |
-| Cómo se llega a la primera entrega | *(completar)* |
+Sprint de una semana. Planning el lunes por videollamada, Review con el dueño todos los viernes, Retroalimentacion el dia viernes al finalizar la clase. reunion por videoconferencia diaria donde se validen los avances, retrasos y mejoras en el proyecto, dos preguntas por escrito a todos los miembros por chat del grupo, una vez hechas las revisiones se subiran los avances al repositorio 
 
 **Roles asignados** *(ajustar los nombres a la metodología elegida)*:
 
 | Integrante | Rol | Qué hace en la práctica |
 | --- | --- | --- |
-| *(completar)* | *(e.g. Product Owner)* | *(completar)* |
-| *(completar)* | *(e.g. Scrum Master)* | *(completar)* |
-| *(completar)* | *(completar)* | *(completar)* |
+| *(Johan Stiven Henao Muñoz)* | *( Product Owner)* | *(Es el encargado de comunicarse con el cliente y el Scrum Master)* |
+| *(Johan Stiven Henao Muñoz)* | *( Scrum Master)* | *(Es el encargado de comunicarse con el Scrum Master y el Grupo de traajo)* |
+| *(Cristian Montes)* | *(Grupo de trabajo)* | *(Desarollar)* |
+  *(Jose Sanchez)* | *(Grupo de trabajo)* | *(Desarollador)* |
 
 **Definición de Hecho** *(mínimo tres condiciones verificables para que una tarjeta pase a Hecho)*:
 
@@ -79,11 +76,13 @@ Explicar cómo se organiza el equipo **dentro** de ellas.
 2. *(completar)*
 3. *(completar)*
 
+*Preguntar por esto*
+
 ---
 
 ## 4. Tablero y backlog inicial
 
-Crear el tablero en **GitHub Projects**, Trello o Jira e **invitar al docente**.
+Crear el tablero en **GitHub Projects**, 
 
 **Mínimos del tablero:**
 
@@ -99,18 +98,18 @@ Crear el tablero en **GitHub Projects**, Trello o Jira e **invitar al docente**.
 
 ---
 
+
 ## 5. Primera acta
 
 Primera entrada de la bitácora de gestión.
 
 | Campo | Respuesta |
 | --- | --- |
-| Fecha | *(completar)* |
-| Asistentes | *(completar)* |
-| Decisiones tomadas | *(completar)* |
-| Compromisos *(quién, qué)* | *(completar)* |
-| Bloqueos o riesgos | *(completar)* |
-
+| Fecha | *(25/09/2026)* |
+| Asistentes | *(Grupo de trabajo y cliente)* |
+| Decisiones tomadas | *(Levantamiento de requerimientos y su respectivo analisis)* |
+| Compromisos *(Johan Stiven Henao, se compromete a tener una entrevista todos los viernes con el cliente para definir sus peticiones y mejoras del proyecto )* |
+| Bloqueos o riesgos | *(Mal analisis de las peticiones del cliente, vulneravilidad de los datos, caida del sistema generando retrasos en las fechas de entrega o cambio bruscos en el proyectos)* |
 ## Ejemplo diligenciado
 
 Referencia de nivel de detalle. Mismo dominio del ejemplo de la ficha: **no se puede usar.**
