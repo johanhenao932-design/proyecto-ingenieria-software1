@@ -20,8 +20,8 @@ Ubicar el proyecto en cada factor **con un dato concreto del dominio**, no con u
 | Dinamismo de los requisitos | *(ágil)* | *(No se requiere ningun mensaje o notificacion)* |
 | Personal *(experiencia del equipo)* | *(intermedio)* | *(nadie ha trabajado en scrum; los integrantes han realizados proyectos similares)* |
 | Cultura  |*(agil)* | *(el gerente acepta ver los avances del proyecto)*  |
-| Acceso al cliente | *(agil)* | *(disponibilidad coodinador johan stiven henao muñoz dia viernes)* |
-| Regulación | Plan *(leve)* | *(majena nombres y documento: aplica ley 1581 de 2012)* |
+| Acceso al cliente | *(agil)* | *(disponibilidad coordinador johan stiven henao muñoz dia viernes)* |
+| Regulación | Plan *(leve)* | *(manejena nombres y documento: aplica ley 1581 de 2012)* |
 
 ---
 
@@ -59,21 +59,20 @@ Reuniones diarias: nos reunimos unos minutos cada día para analizar los progres
 
 Explicar cómo se organiza el equipo **dentro** de ellas.
 
-Sprint de una semana. Planning el lunes por videollamada, Review con el dueño todos los viernes, Retroalimentacion el dia viernes al finalizar la clase. reunion por videoconferencia diaria donde se validen los avances, retrasos y mejoras en el proyecto, dos preguntas por escrito a todos los miembros por chat del grupo, una vez hechas las revisiones se subiran los avances al repositorio 
+Sprint de una semana. Planning el lunes por videollamada, Review con el dueño todos los viernes, Retroalimentacion el dia viernes al finalizar la clase. reunion por videoconferencia diaria donde se validen los avances, retrasos y mejoras en el proyecto del dia anterior, dos preguntas por escrito a todos los miembros por chat del grupo, una vez hechas las revisiones se subiran los avances al repositorio 
 
 **Roles asignados** *(ajustar los nombres a la metodología elegida)*:
 
 | Integrante | Rol | Qué hace en la práctica |
 | --- | --- | --- |
-| *(Johan Stiven Henao Muñoz)* | *( Product Owner)* | *(Es el encargado de comunicarse con el cliente y el Scrum Master)* |
+| *(Cristian Camilo Montes Castaño)* | *( Product Owner)* | *(Es el encargado de comunicarse con el cliente y el Scrum Master)* |
 | *(Johan Stiven Henao Muñoz)* | *( Scrum Master)* | *(Es el encargado de comunicarse con el Scrum Master y el Grupo de traajo)* |
-| *(Cristian Montes)* | *(Grupo de trabajo)* | *(Desarollador)* |
-  *(Jose Sanchez)* | *(Grupo de trabajo)* | *(Desarollador)* |
+|  *(Jose Sanchez)* | *(Grupo de trabajo)* | *(Desarollador)* |
 
 **Definición de Hecho** *(mínimo tres condiciones verificables para que una tarjeta pase a Hecho)*:
 
 1. *(Que cumpla con los requerimientos solicitados en la tarjeta)*
-2. *(Que tenga documentación y que tenga codigo limpio)*
+2. *(Que tenga documentación)*
 3. *(Debe ser revisada y aprobada por el scrum Master, para que pase a hecho)*
 
 *Preguntar por esto*
@@ -92,9 +91,9 @@ Crear el tablero en **GitHub Projects**,
 - Cada tarjeta con **responsable, estimación** *(horas o puntos)* y **fecha límite**.
 - **Todos los integrantes** con al menos una tarjeta asignada.
 
-**Enlace al tablero:** *(completar)*
+**Enlace al tablero:** *(https://github.com/users/johanhenao932-design/projects/1)*
 
-**Método de estimación usado:** *(horas / tres puntos / puntos de historia con planning poker)*
+**Método de estimación usado:** *(horas)*
 
 ---
 
