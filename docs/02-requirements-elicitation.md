@@ -102,22 +102,26 @@ Convertir las notas propias en requisitos candidatos. Todavía no es el catálog
 
 | ID | Descripción | Prioridad | Fuente |
 | --- | --- | --- | --- |
-| RF-01 | El sistema debe permitir el ingreso con contraseña del administrar y el tecnico | Must | P1, P3 |
-| RF-02 | El sistema debe permitir el ingreso de material al administrador | Should | P6 |
-| RF-03 | El sistema debe permitir la asignacion del material a los tecnicos por parte del adminitrador | Should | P7 |
-| RF-04 | El sistema debe permitir la visualizacion del material gastado por parte de los tecnicos | Should | P7 |
-| RF-05 | El sistema debe permitir la devolucion de los materiales por parte de los tecnicos | Should | P7 |
-| RF-06 | El sistema debe permitir la visualizacion del material a nivel general al administrador | Should | P7 |
-| RF-07 | El sistema debe permitir que el tecnico visualice su material gastado en el momento | Should | P7 |
-| RF-08 | El sistema debe permitir que el tecnico ingrese en el sistema elementos entregados defectuosos | Should | P7 |
-| RNF-01 | *(Eficiencia de desempeño)* El sistema soporta ingreso simultaneo de cualquier cantidad de usuarios, respondiendo en menos de 10 s | Must | P9 |
-| RNF-02 | *(Usabilidad)* El sistema esta activo 24/7 | Should | P3, P10 |
-| RNF-03 | *(Usabilidad)* El dueño registra un turno telefónico en menos de 30 s | Should | P3, P10 |
+| RF-01 | El sistema debe permitir el ingreso del administrador y el tecnico  |  Must | P1, P3 |
+| RF-02 | El sistema debe permitir el ingreso de material al administrador | Must | P6 |
+| RF-03 | El sistema debe permitir la asignacion del material a los tecnicos por parte del adminitrador | Must | P7 |
+| RF-04 | El sistema debe permitir la visualizacion del material gastado por parte de los tecnicos | Must | P7 |
+| RF-05 | El sistema debe permitir la devolucion de los materiales por parte de los tecnicos | Must | P7 |
+| RF-06 | El sistema debe permitir la visualizacion del material a nivel general al administrador | Must | P7 |
+| RF-07 | El sistema debe permitir que el tecnico visualice su material gastado en el momento | Must | P7 |
+| RF-08 | El sistema debe permitir que el tecnico ingrese en el sistema elementos entregados defectuosos | Must | P7 |
+| RNF-01 | *(Eficiencia de desempeño)* El sistema soporta ingreso simultaneo de cualquier cantidad de usuarios, respondiendo en menos de 10 s | Should | P9 |
+| RNF-02 | *(Usabilidad)* El sistema esta activo 24/7 | Must | P3, P10 |
+| RNF-03 | *(Usabilidad)* El sistema al momento de cargar los datos se demora 15s | Should | P3, P10 |
 
 
 **Ambigüedades y conflictos detectados** *(lo que hay que aclarar con el cliente del proyecto)*:
 
-- *(completar)*
+- *(Se necesita registrar nuevos usurios o modificar los ya exixtentes?)* Se le pregunta al dueño directo
+
+- *(Se pueden sacar los historicos o historial de las modificaciones del inventario?)* Se le pregunta al dueño y coordinador 
+
+- *(Los usuarios deben ser unicos, tener un diferenciador?)* Se le pregunta al dueño y coordinador 
 
 > Todo requisito lleva **fuente**. Un requisito sin pregunta que lo respalde es un requisito inventado por el equipo.
 
@@ -137,7 +141,18 @@ El equipo cliente lee la lista del punto 4 y marca cada requisito:
 
 | Requisito | Marca | Corrección del cliente |
 |---|---|---|
-| *(completar)* | *(✅ / ✏️ / ❌)* | *(completar)* |
+| *(RF 1)* | *(✏️)* | *(Cliente propone que se ingrese con un usuario y contraseña)* |
+| *(RF 2)* | *(✅ )* | *(Aprobado)* |
+| *(RF 3)* | *(✅)* | *(Aprobado)* |
+| *(RF 4)* | *(✅)* | *(Aprobado)* |
+| *(RF 5)* | *(✏️)* | *(Cliente solicita subir el estado del material (defectuoso,bueno,malo))* |
+| *(RF 6)* | *(✅)* | *(Aprobado)* |
+| *(RF 7)* | *(✅)* | *(Aprobado)* |
+| *(RF 8)* | *(✅)* | *(Aprobado)* |
+| *(RNF 1)* | *(✅)* | *(Aprobado)* |
+| *(RNF 2)* |*(✅)* | *(Aprobado)* |
+| *(RNF 3)* | *(❌)* | *(El equipo supuso el tiempo de gestion)* |
+
 
 - Los ❌ no se borran: pasan a **preguntas para el cliente del proyecto**. Pueden ser requisitos válidos que el cliente no mencionó, o suposiciones del equipo.
 
@@ -153,12 +168,12 @@ La entrevista de hoy es un ensayo. La elicitación que cuenta para la Nota 1 es 
 
 | Campo | Respuesta |
 | --- | --- |
-| Cliente del proyecto *(nivel 1, 2 o 3 y rol, no nombre)* | *(completar)* |
-| Técnica principal y técnica complementaria | *(e.g. entrevista + análisis de documentos)* |
-| Fecha y lugar | *(entre el 21/09 y el 24/09: el Sprint 1 cierra con la Nota 1 el viernes 25/09)* |
-| Responsables | *(completar)* |
-| Evidencia que se va a recoger | *(guion y notas / fotos / grabación con consentimiento / documentos)* |
-| Preguntas que se añaden al guion tras el taller | *(completar)* |
+| Cliente del proyecto  | *(nivel 3, equipo cliente)* |
+| Técnica principal y técnica complementaria | *( entrevista + análisis de documentos)* |
+| Fecha y lugar | *(21/09/2026)* |*(Universidad Uniremintong)* | *(desde las 8:00 pm a 9:00 pm)* | 
+| Responsables | *(Johan, Entrevistador)* |  *(Cristian, Anotador)* | *(José, Observador)* |
+| Evidencia que se va a recoger | *( notas y grabación con consentimiento)* |
+| Preguntas que se añaden al guion tras el taller | *(¿actualmente usa algún método o herramientas para esta tarea?)* | *(¿Qué nivel de experiencia técnica tienen los usuarios en las nuevas tecnologías?)* | *(¿con que presupuesto cuentan y cuanto tiempo están dispuestos a esperar?)* | *(¿Este sistema lo usa solamente el personal de la empresa  o también sus clientes?)* |
 
 - Añadir la tarjeta de la entrevista real al tablero, dentro del **Sprint 1**, con responsable y fecha.
 
