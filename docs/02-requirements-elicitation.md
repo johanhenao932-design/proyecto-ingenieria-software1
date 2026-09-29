@@ -109,7 +109,15 @@ Convertir las notas propias en requisitos candidatos. Todavía no es el catálog
 | RF-05 | El sistema debe permitir la devolucion de los materiales por parte de los tecnicos | Must | P7 |
 | RF-06 | El sistema debe permitir la visualizacion del material a nivel general al administrador | Must | P7 |
 | RF-07 | El sistema debe permitir que el tecnico visualice su material gastado en el momento | Must | P7 |
-| RF-08 | El sistema debe permitir que el tecnico ingrese en el sistema elementos entregados defectuosos | Must | P7 |
+|RF-08|	El sistema debe permitir que el técnico ingrese en el sistema elementos entregados defectuosos	|Should	|P7|
+|RF-09|	El sistema debe permitir al administrador visualizar el historial de movimientos de material	|Should|P7|
+|RF-10|	El sistema debe permitir al administrador registrar, editar y desactivar cuentas de técnicos	|Should	|P1|
+|RF-11|	El sistema debe notificar al administrador cuando un material esté defectuoso según el estado del material	|Should| P7|
+|RF-12|	El sistema debe enviar una notificación al momento de presentarse una falla	|should	|P7|
+|RF-13|	El sistema debe permitir al administrador revisar y aprobar o rechazar los elementos defectuosos reportados por los técnicos	|Should|P7|
+|RF-14|	El sistema debe permitir al técnico consultar el material que tiene asignado actualmente	|Should	|P7|
+|RF-15|	El sistema debe permitir al administrador confirmar la recepción de los materiales devueltos por los técnicos	|Should|P7|
+|RF-16|	El sistema debe registrar la fecha, hora y usuario responsable de cada movimiento de material |Should|P7|
 | RNF-01 | *(Eficiencia de desempeño)* El sistema soporta ingreso simultaneo de cualquier cantidad de usuarios, respondiendo en menos de 10 s | Should | P9 |
 | RNF-02 | *(Usabilidad)* El sistema esta activo 24/7 | Must | P3, P10 |
 | RNF-03 | *(Usabilidad)* El sistema al momento de cargar los datos se demora 15s | Should | P3, P10 |
