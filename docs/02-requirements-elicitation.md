@@ -125,7 +125,7 @@ Convertir las notas propias en requisitos candidatos. Todavía no es el catálog
 | RNF-05 | *(Fiabilidad)* El sistema debe garantizar la integridad del inventario: ningún movimiento de material debe dejar el stock en valores negativos | Should | P3, P10 |
 | RNF-06 | *(Fiabilidad)* El sistema debe recuperarse de una falla en un máximo de 1 hora | Should | P3, P10 |
 | RNF-07 | *(Usabilidad)* El sistema debe mostrar mensajes de error claros| Should | P3 |
-| RNF-08 | *(Eficiencia de desempeño)* El sistema debe soportar al menos 50 usuarios concurrentes sin degradar el tiempo de respuesta|| Should | P9 |
+| RNF-08 | *(Eficiencia de desempeño)* El sistema debe soportar al menos 50 usuarios concurrentes sin degradar el tiempo de respuesta|Should | P9 |
 | RNF-09 | *(Eficiencia de desempeño)* El historial de movimientos debe cargar en menos de 5 s con hasta 10.000 registros | Should | P7, P9 |
 
 
