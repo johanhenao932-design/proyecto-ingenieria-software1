@@ -93,6 +93,8 @@ Una tabla por caso crítico.
 
 ## 5. Trazabilidad
 
+//pregunta al profesor  
+
 **Columna de caso de uso de la matriz** *()*:
 
 **Columna de caso de uso de la matriz (la que se abrió en la Clase 3):
