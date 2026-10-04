@@ -104,7 +104,7 @@ Convertir las notas propias en requisitos candidatos. Todavía no es el catálog
 | --- | --- | --- | --- |
 | RF-01 | El sistema debe permitir el ingreso del administrador y el tecnico  |  Must | P1, P3 |
 | RF-02 | El sistema debe permitir el ingreso de material al administrador | Must | P6 |
-| RF-03 | El sistema debe permitir la asignacion del material a los tecnicos por parte del adminitrador | Must | P7 |
+| RF-03 | El sistema debe permitir la asignacion del material a los tecnicos por parte del administrador | Must | P7 |
 | RF-04 | El sistema debe permitir la visualizacion del material gastado por parte de los tecnicos | Must | P7 |
 | RF-05 | El sistema debe permitir la devolucion de los materiales por parte de los tecnicos | Must | P7 |
 | RF-06 | El sistema debe permitir la visualizacion del material a nivel general al administrador | Must | P7 |
