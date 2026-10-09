@@ -109,57 +109,101 @@ Un solo diagrama con:
 
 **Imagen o enlace al diagrama:** *(completar)*
 
-*CODIGO PUML* 
-
 @startuml
-title Diagrama de clases del dominio - Gestion de material
-skinparam classAttributeIconSize 0
+title Diagrama de clases - Gestion de material
 
+skinparam classAttributeIconSize 0
+skinparam linetype ortho
+skinparam nodesep 90
+skinparam ranksep 110
+skinparam padding 4
+skinparam shadowing false
+skinparam ArrowColor #333333
+skinparam ArrowThickness 1.5
+skinparam class {
+  BackgroundColor #DAE3F3
+  BorderColor #4A86C5
+  FontSize 14
+  AttributeFontSize 12
+}
+
+' ===== FILA 1: clase padre =====
 class Usuario {
   - id
   - nombre
   - contrasena
   - activo
+  + iniciarSesion()
+  + cerrarSesion()
+  + verMaterialGastado()
 }
-class Administrador
-class Tecnico
 
+' ===== FILA 2: actores =====
+class Administrador {
+  + ingresarMaterial()
+  + asignarMaterial()
+  + verMaterialGeneral()
+  + verHistorial()
+  + gestionarCuentaTecnico()
+  + recibirNotificacion()
+}
+
+class Tecnico {
+  + consultarMaterialAsignado()
+  + recibirMaterial()
+  + devolverMaterial()
+  + devolverMaterialDefectuoso()
+}
+
+' ===== FILA 3: clases de datos =====
 class Material {
   - codigo
   - nombre
   - stock
   - estado
 }
+
 class Asignacion {
   - fecha
-}
-class DetalleAsignacion {
   - cantidadAsignada
   - cantidadGastada
 }
+
 class Devolucion {
   - fecha
   - cantidad
   - estado
 }
+
+' ===== FILA 4 =====
 class ReporteDefecto {
   - fecha
   - descripcion
   - estado
 }
 
-Usuario <|-- Administrador
-Usuario <|-- Tecnico
+' ===== Herencia =====
+Usuario <|-down- Administrador
+Usuario <|-down- Tecnico
 
-Asignacion *-- DetalleAsignacion
+' ===== Administrador (lado izquierdo) =====
+Administrador "1" -down-> "0..*" Material
+Administrador "1" -down-> "0..*" Asignacion
 
-Administrador -- Asignacion : crea
-Tecnico -- Asignacion : recibe
-Material -- DetalleAsignacion : se asigna en
-DetalleAsignacion -- Devolucion : se devuelve en
-Administrador -- Devolucion : confirma
-Tecnico -- ReporteDefecto : reporta
-Material -- ReporteDefecto : es reportado en
+' ===== Tecnico (lado derecho) =====
+Tecnico "1" <-down- "0..*" Asignacion
+Tecnico "1" -down-> "0..*" Devolucion
+Tecnico "1" -down-> "0..*" ReporteDefecto
+
+' ===== Relaciones entre clases de datos =====
+Material "1" -right- "0..*" Asignacion
+Asignacion "1" -right- "0..*" Devolucion
+Material "1" -down- "0..*" ReporteDefecto
+
+' ===== Ayudas de orden =====
+Material -[hidden]right- Asignacion
+Asignacion -[hidden]right- Devolucion
+Asignacion -[hidden]down- ReporteDefecto
 @enduml
 
 
@@ -211,6 +255,6 @@ Material -- ReporteDefecto : es reportado en
 
 **3. Diagrama** *(extracto en PlantUML)*
 
-![img01](/docs/diagrams/img-01.png)
+![img](/docs/diagramas/diagrama-gestion-material.PNG)
 
 **4. Trazabilidad:** RF-01 → CU-01 Reservar turno → Cliente, Turno, Barbero. RF-02 → CU-02 Marcar no asistido → Turno *(estado)*.
