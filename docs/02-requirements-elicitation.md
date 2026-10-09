@@ -130,7 +130,6 @@ Convertir las notas propias en requisitos candidatos. Todavía no es el catálog
 
 
 
-
 **Ambigüedades y conflictos detectados** *(lo que hay que aclarar con el cliente del proyecto)*:
 
 - *(Se necesita registrar nuevos usurios o modificar los ya exixtentes?)* Se le pregunta al dueño directo

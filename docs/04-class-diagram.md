@@ -82,13 +82,9 @@ Se escribe en cada extremo de la relación: cuántos objetos de ese lado se rela
 | ReporteDefecto | RF-08, RF-13, CU-08, CU-09 | Sí | Son los "elementos defectuosos"; tiene descripción y estado de revisión |
 | Notificación | RF-11, RF-12, CU-11 | Sí | Alerta al administrador; guarda mensaje y tipo |
 | MovimientoMaterial | RF-09, RF-16, CU-10 | Sí | Es el historial: fecha, hora, tipo, cantidad y responsable |
-| Cuenta | RF-10 | No | Sinónimo de Usuario |
 | Material gastado | RF-04, RF-07 | No | Sinónimo de Consumo |
 | Elementos defectuosos | RF-08, RF-13 | No | Es el nombre usado en el RF; la clase es ReporteDefecto |
-| Contraseña | RF-01 | No | Es un atributo de Usuario |
-| Estado del material | RF-11 | No | Es un atributo de Material |
 | Fecha, hora | RF-16 | No | Son atributos de MovimientoMaterial |
-| Falla | RF-12 | No | Es un valor del tipo de Notificación |
 | Recepción | RF-15 | No | Es el estado "confirmada" de Devolución |
 | Historial de movimientos | RF-09 | No | Es la lista de MovimientoMaterial: una consulta, no una clase |
 | Inventario | RF-06 | No | Es una consulta sobre Material, no un concepto con datos propios |
@@ -129,57 +125,57 @@ skinparam class {
 
 ' ===== FILA 1: clase padre =====
 class Usuario {
-  - id
-  - nombre
-  - contrasena
-  - activo
-  + iniciarSesion()
-  + cerrarSesion()
-  + verMaterialGastado()
+  - id : int
+  - nombre : String
+  - contrasena : String
+  - activo : boolean
+  + iniciarSesion() : boolean
+  + cerrarSesion() : void
+  + verMaterialGastado() : List<Asignacion>
 }
 
 ' ===== FILA 2: actores =====
 class Administrador {
-  + ingresarMaterial()
-  + asignarMaterial()
-  + verMaterialGeneral()
-  + verHistorial()
-  + gestionarCuentaTecnico()
-  + recibirNotificacion()
+  + ingresarMaterial(material : Material) : void
+  + asignarMaterial(tecnico : Tecnico, material : Material, cantidad : int) : Asignacion
+  + verMaterialGeneral() : List<Material>
+  + verHistorial() : List<Asignacion>
+  + gestionarCuentaTecnico(tecnico : Tecnico, activo : boolean) : void
+  + recibirNotificacion() : void
 }
 
 class Tecnico {
-  + consultarMaterialAsignado()
-  + recibirMaterial()
-  + devolverMaterial()
-  + devolverMaterialDefectuoso()
+  + consultarMaterialAsignado() : List<Asignacion>
+  + recibirMaterial(asignacion : Asignacion) : void
+  + devolverMaterial(material : Material, cantidad : int) : Devolucion
+  + devolverMaterialDefectuoso(material : Material, descripcion : String) : ReporteDefecto
 }
 
 ' ===== FILA 3: clases de datos =====
 class Material {
-  - codigo
-  - nombre
-  - stock
-  - estado
+  - codigo : String
+  - nombre : String
+  - stock : int
+  - estado : String
 }
 
 class Asignacion {
-  - fecha
-  - cantidadAsignada
-  - cantidadGastada
+  - fecha : Date
+  - cantidadAsignada : int
+  - cantidadGastada : int
 }
 
 class Devolucion {
-  - fecha
-  - cantidad
-  - estado
+  - fecha : Date
+  - cantidad : int
+  - estado : String
 }
 
 ' ===== FILA 4 =====
 class ReporteDefecto {
-  - fecha
-  - descripcion
-  - estado
+  - fecha : Date
+  - descripcion : String
+  - estado : String
 }
 
 ' ===== Herencia =====
@@ -205,7 +201,6 @@ Material -[hidden]right- Asignacion
 Asignacion -[hidden]right- Devolucion
 Asignacion -[hidden]down- ReporteDefecto
 @enduml
-
 
 ## 4. Trazabilidad y dudas
 
