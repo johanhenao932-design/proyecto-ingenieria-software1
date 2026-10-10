@@ -112,7 +112,6 @@ skinparam classAttributeIconSize 0
 skinparam linetype ortho
 skinparam nodesep 90
 skinparam ranksep 110
-skinparam padding 4
 skinparam shadowing false
 skinparam ArrowColor #333333
 skinparam ArrowThickness 1.5
@@ -121,6 +120,10 @@ skinparam class {
   BorderColor #4A86C5
   FontSize 14
   AttributeFontSize 12
+}
+skinparam class<<ia>> {
+  BackgroundColor #E2F0D9
+  BorderColor #70AD47
 }
 
 ' ===== FILA 1: clase padre =====
@@ -151,16 +154,27 @@ class Tecnico {
   + devolverMaterialDefectuoso(material : Material, descripcion : String) : ReporteDefecto
 }
 
+class AgenteIA <<ia>> {
+  - nombre : String
+  + predecirAgotamiento(material : Material) : boolean
+  + notificarMaterialPorAgotarse(material : Material) : Notificacion
+  + consultarHistorial(material : Material) : List<Asignacion>
+  + analizarReporte(reporte : ReporteDefecto) : String
+  + notificarDictamen(reporte : ReporteDefecto) : Notificacion
+}
+
 ' ===== FILA 3: clases de datos =====
 class Material {
   - codigo : String
   - nombre : String
   - stock : int
+  - stockMinimo : int
   - estado : String
 }
 
 class Asignacion {
   - fecha : Date
+  - fechaLimiteDevolucion : Date
   - cantidadAsignada : int
   - cantidadGastada : int
 }
@@ -171,10 +185,20 @@ class Devolucion {
   - estado : String
 }
 
+class Notificacion <<ia>> {
+  - id : int
+  - tipo : String
+  - mensaje : String
+  - fecha : Date
+  - leida : boolean
+}
+
 ' ===== FILA 4 =====
 class ReporteDefecto {
   - fecha : Date
   - descripcion : String
+  - fotos : List<String>
+  - dictamen : String
   - estado : String
 }
 
@@ -187,7 +211,7 @@ Administrador "1" -down-> "0..*" Material
 Administrador "1" -down-> "0..*" Asignacion
 
 ' ===== Tecnico (lado derecho) =====
-Tecnico "1" <-down- "0..*" Asignacion
+Asignacion "0..*" -up-> "1" Tecnico
 Tecnico "1" -down-> "0..*" Devolucion
 Tecnico "1" -down-> "0..*" ReporteDefecto
 
@@ -196,11 +220,21 @@ Material "1" -right- "0..*" Asignacion
 Asignacion "1" -right- "0..*" Devolucion
 Material "1" -down- "0..*" ReporteDefecto
 
+' ===== Agente de IA (segundo actor) =====
+AgenteIA "1" -right-> "1" Administrador : notifica
+AgenteIA "1" -down-> "0..*" Notificacion : genera
+AgenteIA ..> Asignacion : consulta
+AgenteIA ..> ReporteDefecto : analiza
+
 ' ===== Ayudas de orden =====
 Material -[hidden]right- Asignacion
 Asignacion -[hidden]right- Devolucion
 Asignacion -[hidden]down- ReporteDefecto
+Administrador -[hidden]right- Tecnico
+AgenteIA -[hidden]right- Administrador
+Notificacion -[hidden]right- Material
 @enduml
+
 
 ## 4. Trazabilidad y dudas
 
@@ -250,6 +284,6 @@ Asignacion -[hidden]down- ReporteDefecto
 
 **3. Diagrama** *(extracto en PlantUML)*
 
-![img](/docs/diagramas/diagrama-gestion-material.PNG)
+![img](/docs/diagramas/diagrama-gestion-material.png)
 
 **4. Trazabilidad:** RF-01 → CU-01 Reservar turno → Cliente, Turno, Barbero. RF-02 → CU-02 Marcar no asistido → Turno *(estado)*.
