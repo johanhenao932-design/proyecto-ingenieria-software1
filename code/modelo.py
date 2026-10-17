@@ -15,6 +15,27 @@ class Usuario:
     def cerrarSesion(self):
         return True
 
+    def cambiarContrasena(self, contrasenaActual, contrasenaNueva):
+        if not self.iniciarSesion(contrasenaActual):
+            raise ValueError("La contraseña actual es incorrecta.")
+
+        if not contrasenaNueva.strip():
+            raise ValueError("La nueva contraseña no puede estar vacía.")
+
+        self.contrasena = contrasenaNueva
+
+    def restablecerContrasena(self, contrasenaNueva):
+        if not contrasenaNueva.strip():
+            raise ValueError("La nueva contraseña no puede estar vacía.")
+
+        self.contrasena = contrasenaNueva
+
+    def cambiarNombreUsuario(self, nombreNuevo):
+        if not nombreNuevo.strip():
+            raise ValueError("El nombre de usuario no puede estar vacío.")
+
+        self.nombre = nombreNuevo.strip()
+
     def verMaterialAsignado(self, asignaciones):
         return [
             a for a in asignaciones
