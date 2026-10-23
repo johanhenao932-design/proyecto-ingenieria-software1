@@ -1,7 +1,13 @@
 
-from modelo import Administrador, Tecnico, Material
-from vista import Vista
-from controlador import Controlador
+import os
+import sys
+
+# Agrega la carpeta code/ al path para poder ejecutar este archivo directamente.
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+from modelo.modelo import Administrador, Tecnico, Material
+from vista.vista import Vista
+from controlador.controlador import Controlador
 
 
 def main():

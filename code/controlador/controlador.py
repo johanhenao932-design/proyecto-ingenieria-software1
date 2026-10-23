@@ -1,5 +1,5 @@
 
-from modelo import Material, Tecnico
+from modelo.modelo import Material, Tecnico
 
 
 class Controlador:
